@@ -36,7 +36,7 @@
                     <input (ngModel)="newEvent.location.city" name="city" id="city" type="text" class="form-control" placeholder="City..." />
                 </div>
                 <div class="col-md-6">
-                    <input (ngModel)="newEvent.country" name="country" id="country" type="text" class="form-control" placeholder="Country..." />
+                    <input (ngModel)="newEvent.location.country" name="country" id="country" type="text" class="form-control" placeholder="Country..." />
                 </div>
             </div>
         </div>
@@ -53,6 +53,6 @@
         </div>
 
         <button type="submit" [disabled]="newEventForm.invalid" class="btn btn-primary">Save</button>
-        <button type="button" class="btn btn-default" (click)="cancel()">Cancel</button>
+        <button type="button" class="btn btn-default" (click)="onCancelClick()">Cancel</button>
     </form>
 </div>
